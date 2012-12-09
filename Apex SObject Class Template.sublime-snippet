@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Name: ${1:$SELECTION}
+ * Author: Jonathan Broquist
+ * Date: $2
+ * Description: This class handles the trigger logic for the $1 object.
+ */
+public class $1 extends SObjects 
+{
+	//VARIABLES
+	//=========================================================================
+	public static boolean firstRun = true;
+
+	//CONSTRUCTOR
+	//=========================================================================
+	public $1() {}
+
+	//PUBLIC METHODS
+	//=========================================================================
+	public override void beforeInsert(SObject[] records){}
+	public override void afterInsert(SObject[] records){}
+	public override void beforeUpdate(SObject[] records, SObject[] oldRecords, Map<Id, SObject> recordMap, Map<Id, SObject> oldRecordMap){}
+	public override void afterUpdate(SObject[] records, SOBject[] oldRecords, Map<Id, SObject> recordMap, Map<Id, SObject> oldRecordMap){}
+	public override void beforeDelete(SObject[] records, Map<Id, SObject> recordMap){}
+	public override void afterDelete(SObject[] records, Map<Id, SObject> recordMap){}
+	public override void afterUndelete(SObject[] records){}
+
+	//PRIVATE METHODS
+	//=========================================================================
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
