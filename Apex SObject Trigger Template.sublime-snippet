@@ -6,7 +6,7 @@
  * Date: $2
  * Description: Trigger for the $1 object.
  */
-trigger $1Trigger on $1${3:__c} (before insert, before update, after insert, after update, after delete, before delete) 
+trigger $1Trigger on $1${3:__c} (before insert, before update, after insert, after update, after delete, before delete, after undelete) 
 {
 	$1s objectHandler = new $1s();
 
